@@ -1,0 +1,90 @@
+.header {
+  height: 70px;
+  padding: 0 40px;
+  display: flex;
+  align-items: center; /* 🔥 KEY FIX */
+  justify-content: space-between;
+  background: #ffffff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* ✅ LOGO FIX */
+.header-logo {
+  font-size: 28px;
+  font-weight: 800;
+  color: #2563eb;
+  letter-spacing: 0.6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+/* NAV */
+.menu {
+  display: flex;
+  gap: 32px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #374151;
+  font-weight: 500;
+  position: relative;
+}
+
+.menu a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #2563eb;
+  left: 0;
+  bottom: -6px;
+  transition: width 0.3s ease;
+}
+
+.menu a:hover::after {
+  width: 100%;
+}
+
+/* AUTH */
+.auth-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+/* LOGIN */
+.login-btn {
+  background: white;
+  border: 2px solid #2563eb;
+  color: #2563eb;
+  padding: 8px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+  background: #2563eb;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* REGISTER */
+.register-btn {
+  background: #2563eb;
+  border: none;
+  color: white;
+  padding: 8px 22px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.register-btn:hover {
+  transform: scale(1.05);
+}

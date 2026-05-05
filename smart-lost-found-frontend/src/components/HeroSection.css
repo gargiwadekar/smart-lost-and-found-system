@@ -1,0 +1,123 @@
+.hero {
+  min-height: calc(100vh - 70px);
+  display: flex;
+  align-items: center;
+  padding: 40px 80px;
+  background: white;
+}
+
+.hero-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-container img {
+  width: 360px;
+}
+
+
+/* FLOATING ELEMENTS */
+.float {
+  position: absolute;
+  font-size: 26px;
+  animation: float 3s ease-in-out infinite;
+}
+
+.key { top: -20px; left: 80px; }
+.bag { top: -30px; right: 70px; animation-delay: 1s; }
+.phone { top: 60px; left: -35px; animation-delay: 2s; }
+.question { top: -65px; left: 150px; font-size: 32px; }
+.laptop {
+  top: 10px;
+  right: -30px;
+  animation-delay: 1.5s;
+}
+
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0); }
+}
+
+/* RIGHT SIDE */
+.hero-right {
+  flex: 1;
+}
+
+.badge {
+  display: inline-block;
+  background: #e0ecff;
+  color: #2563eb;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.hero-right h1 {
+  font-size: 52px;
+  font-weight: 800;
+  color: #1e3a8a;
+  margin-bottom: 15px;
+}
+
+.hero-right p {
+  font-size: 18px;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+/* BUTTONS */
+.cta-buttons {
+  margin-top: 25px;
+  display: flex;
+  gap: 20px;
+}
+
+.primary {
+  background: #2563eb;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 12px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(37,99,235,0.3);
+}
+
+.secondary {
+  background: white;
+  color: #2563eb;
+  padding: 14px 28px;
+  border-radius: 12px;
+  border: 2px solid #2563eb;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.secondary:hover {
+  background: #2563eb;
+  color: white;
+}
+
+/* FEATURES */
+.features {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+  font-weight: 500;
+  color: #374151;
+}
