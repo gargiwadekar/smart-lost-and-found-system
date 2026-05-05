@@ -1,16 +1,107 @@
-# React + Vite
+# 🧭 Lost & Found System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack web application that helps users report, track, and recover lost items efficiently.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+* 📌 Report lost items with details
+* 🔍 Search and view found items
+* 📊 Dashboard for managing entries
+* 🔔 Real-time status tracking (lost → found)
+* 👤 User authentication (login/register)
+* 📱 Responsive UI
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Frontend:**
+
+* React.js
+* HTML, CSS
+
+**Backend:**
+
+* Node.js / Express.js (or mention your backend)
+
+**Database:**
+
+* MongoDB (or your DB)
+
+---
+
+## 📂 Project Structure
+
+```bash
+src/
+ ├── components/
+ ├── pages/
+ ├── layouts/
+ ├── styles/
+```
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1. Clone repository
+
+```bash
+git clone https://github.com/gargiwadekar/lost-and-found-system.git
+cd lost-and-found-system
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Run project
+
+```bash
+npm run dev
+```
+
+---
+
+## 📸 Screenshots
+
+(Add your screenshots here)
+
+* Home page
+* Dashboard
+* Report item page
+
+---
+
+## 🎯 Use Case
+
+This system helps:
+
+* Students report lost belongings
+* Admins manage found items
+* Faster recovery of items
+
+---
+
+## 👩‍💻 Author
+
+**Gargi Wadekar**
+
+---
+
+## ⭐ Future Improvements
+
+* Email notifications
+* AI-based matching system
+* Mobile app version
+
+---
+
+## 📌 Project Status
+
+✔ Completed and functional
+🚀 Open for improvements
